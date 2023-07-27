@@ -16,9 +16,9 @@ def save_ply(filename, points, colors):
         f.write(header)
         np.savetxt(f, points, fmt='%d %d %d %d %d %d')
 
-crop_image_dir = '/Users/ngandige/Documents/Veytel/Dermviz/Synthetic_data/crops'
-pointcloud_dir = '/Users/ngandige/Documents/Veytel/Dermviz/Synthetic_data/pointclouds'
-histogram_dir = '/Users/ngandige/Documents/Veytel/Dermviz/Synthetic_data/histograms'
+crop_image_dir = '/Users/ngandige/Documents/Veytel/Dermviz/synthetic_data/data/crops'
+pointcloud_dir = '/Users/ngandige/Documents/Veytel/Dermviz/synthetic_data/data/pointclouds'
+histogram_dir = '/Users/ngandige/Documents/Veytel/Dermviz/synthetic_data/data/histograms'
 
 files = os.listdir(crop_image_dir)
 files = [file for file in files if not file.startswith('.DS_Store')]

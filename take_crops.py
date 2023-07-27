@@ -1,8 +1,8 @@
 import cv2
 import os
 
-back_image_dir = '/Users/ngandige/Documents/Veytel/Dermviz/Synthetic_data/full_back_images'
-crop_save_path = '/Users/ngandige/Documents/Veytel/Dermviz/Synthetic_data/crops/'
+back_image_dir = '/Users/ngandige/Documents/Veytel/Dermviz/synthetic_data/data/full_back_images'
+crop_save_path = '/Users/ngandige/Documents/Veytel/Dermviz/synthetic_data/data/crops'
 files = os.listdir(back_image_dir)
 files = [file for file in files if not file.startswith('.DS_Store')]
 
@@ -42,4 +42,4 @@ for i in range(49,len(files)):
         if key == 27: 
             break
     cv2.destroyAllWindows()
-    cv2.imwrite('/Users/ngandige/Documents/Veytel/Dermviz/Synthetic_data/backs_processed' + f'/processed_{file}', img)
+    cv2.imwrite('/Users/ngandige/Documents/Veytel/Dermviz/synthetic_data/data/full_back_images' + f'/processed_{file}', img)
